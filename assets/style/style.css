@@ -1,0 +1,303 @@
+/* Global */
+
+body {
+    background: linear-gradient(135deg, #f0f0f0, #d9e2ec);
+    padding: 15px;
+    margin: 0;
+}
+
+h5,
+h3,
+p {
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.separador {
+    border: 0px;
+    border-top: 2px solid darkblue;
+    margin: 30px 0px;
+    opacity: 1;
+    border-radius: 50px;
+}
+
+.separador_puntos {
+    border-top: 5px dotted darkblue;
+    margin: 20px 0px;
+    opacity: 1;
+}
+
+p {
+    overflow-wrap: break-word;
+}
+
+/* Nav-Bar */
+.menu__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+    padding: 7px;
+    font-size: 20px;
+    margin: 0 0 25px 0;
+}
+
+.menu__item a {
+    color: black;
+}
+
+/* Inicio */
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.foto_perfil {
+    width: 300px;
+    border-radius: 30px;
+}
+
+.inicio__iconos {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.bi {
+    font-size: 40px;
+    color: black;
+}
+
+/* Habilidades - Hobbies - Formación*/
+.lista__imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.lista__imagenes img {
+    width: 100px;
+}
+
+.lista__imagenes p {
+    font-weight: bold;
+}
+
+.lista__formacion {
+    width: 220px !important;
+}
+
+.lista__imagenes li {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background: rgba(218, 217, 233, 0.3);
+    border-radius: 20px;
+    /* border: 1px solid black; */
+}
+
+/* Formación */
+.lista__formacion li {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.lista__aplilada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.lista__aplilada dt,
+.lista__aplilada dd {
+    margin: 0;
+    /* Elimina márgenes por defecto */
+    padding: 0;
+    /* Elimina relleno por defecto */
+    text-align: center;
+}
+
+/* Proyectos */
+.imagenes__proyectos img {
+    width: 100%;
+    padding-right: 10px;
+}
+
+.cuadro__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadro__link__texto {
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.cuadro__link__item {
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    background-color: darkblue;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadro__link__item a {
+    color: white;
+}
+
+.cuadro__link__acceso {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #02023a;
+    color: #e0e0e0;
+}
+
+@media (min-width: 768px) {
+
+    /* Inicio */
+    .inicio {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .foto_perfil {
+        width: 300px;
+    }
+
+    .presentacion__titulo {
+        margin: 0 40px;
+    }
+
+    .inicio__iconos {
+        padding-top: 10px;
+        gap: 50px;
+    }
+
+    /* Hobbies */
+    .animacion {
+        transition: transform 0.6s ease;
+    }
+
+    /* Proyectos */
+    .cuadro__link {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cuadro__link dt,
+    .cuadro__link__texto {
+        margin: 0 20px;
+    }
+
+    .invertido {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+
+    /* Global */
+    .scale2 {
+        transform: scale(1.5);
+        /* Escala el elemento al 120% */
+    }
+
+    /* Nav-bar */
+    .menu__item {
+        transition: transform 0.3s ease;
+        /* Añade una transición suave */
+    }
+
+    .menu__item:hover {
+        background-color: #e0d4d4;
+        padding: 0 15px;
+        border-radius: 15px;
+    }
+
+    /* Inicio */
+    .bi {
+        transition: transform 0.3s ease;
+        /* Añade una transición suave */
+    }
+
+    .inicio {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .foto_perfil {
+        width: 300px;
+    }
+
+    .presentacion__titulo {
+        margin: 0 40px;
+    }
+
+    .inicio__iconos {
+        padding-top: 10px;
+        gap: 50px;
+    }
+
+    /* Hobbies */
+    .animacion {
+        transition: transform 0.6s ease;
+    }
+
+    /* Proyectos */
+    .cuadro__link {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cuadro__link dt,
+    .cuadro__link__texto {
+        margin: 0 20px;
+    }
+
+    .invertido {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
